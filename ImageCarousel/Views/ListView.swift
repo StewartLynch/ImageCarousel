@@ -1,6 +1,6 @@
 //
 // Created for ImageCarousel
-// by  Stewart Lynch on 2024-04-15
+// by  Stewart Lynch on 2024-04-14
 //
 // Follow me on Mastodon: @StewartLynch@iosdev.space
 // Follow me on Threads: @StewartLynch (https://www.threads.net)
@@ -12,18 +12,19 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ListView: View {
+    @Environment(Store.self) private var store
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack{
+            Text("List View")
+            .listStyle(.plain)
+            .navigationTitle("List View")
         }
-        .padding()
+        
     }
 }
 
 #Preview {
-    ContentView()
+    ListView()
+        .environment(Store())
 }

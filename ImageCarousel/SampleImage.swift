@@ -1,6 +1,6 @@
 //
 // Created for ImageCarousel
-// by  Stewart Lynch on 2024-04-15
+// by  Stewart Lynch on 2024-04-14
 //
 // Follow me on Mastodon: @StewartLynch@iosdev.space
 // Follow me on Threads: @StewartLynch (https://www.threads.net)
@@ -9,16 +9,11 @@
 // Subscribe on YouTube: https://youTube.com/@StewartLynch
 // Buy me a ko-fi:  https://ko-fi.com/StewartLynch
 
-import SwiftUI
 
-@main
-struct ImageCarouselApp: App {
-    @State private var store = Store()
-    var body: some Scene {
-        WindowGroup {
-            StartTab()
-                .environment(store)
-        }
-    }
+import Foundation
+
+struct SampleImage: Identifiable, Codable {
+    let id: Int
+    let imageUrl: URL
+    let caption: String
 }
-

@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		BB46516F2BCD807A0059AE63 /* ImageCarouselApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46516E2BCD807A0059AE63 /* ImageCarouselApp.swift */; };
-		BB4651712BCD807A0059AE63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4651702BCD807A0059AE63 /* ContentView.swift */; };
 		BB4651732BCD807B0059AE63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4651722BCD807B0059AE63 /* Assets.xcassets */; };
 		BB4651762BCD807B0059AE63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4651752BCD807B0059AE63 /* Preview Assets.xcassets */; };
+		BB4651832BCD80900059AE63 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46517C2BCD80900059AE63 /* Store.swift */; };
+		BB4651842BCD80900059AE63 /* TabCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46517D2BCD80900059AE63 /* TabCarouselView.swift */; };
+		BB4651852BCD80900059AE63 /* ScrollViewCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46517E2BCD80900059AE63 /* ScrollViewCarouselView.swift */; };
+		BB4651862BCD80900059AE63 /* SampleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46517F2BCD80900059AE63 /* SampleImage.swift */; };
+		BB4651872BCD80900059AE63 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4651802BCD80900059AE63 /* ListView.swift */; };
+		BB4651882BCD80900059AE63 /* ScrollViewCarouselView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4651812BCD80900059AE63 /* ScrollViewCarouselView2.swift */; };
+		BB4651892BCD80900059AE63 /* StartTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4651822BCD80900059AE63 /* StartTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB46516B2BCD807A0059AE63 /* ImageCarousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageCarousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB46516E2BCD807A0059AE63 /* ImageCarouselApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselApp.swift; sourceTree = "<group>"; };
-		BB4651702BCD807A0059AE63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB4651722BCD807B0059AE63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB4651752BCD807B0059AE63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB46517C2BCD80900059AE63 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		BB46517D2BCD80900059AE63 /* TabCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCarouselView.swift; sourceTree = "<group>"; };
+		BB46517E2BCD80900059AE63 /* ScrollViewCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewCarouselView.swift; sourceTree = "<group>"; };
+		BB46517F2BCD80900059AE63 /* SampleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleImage.swift; sourceTree = "<group>"; };
+		BB4651802BCD80900059AE63 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		BB4651812BCD80900059AE63 /* ScrollViewCarouselView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewCarouselView2.swift; sourceTree = "<group>"; };
+		BB4651822BCD80900059AE63 /* StartTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartTab.swift; path = ../../../ImageCarousel/ImageCarousel/StartTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				BB46516E2BCD807A0059AE63 /* ImageCarouselApp.swift */,
-				BB4651702BCD807A0059AE63 /* ContentView.swift */,
+				BB4651822BCD80900059AE63 /* StartTab.swift */,
+				BBCE03D12BCD81FF006E4103 /* Views */,
+				BB46517F2BCD80900059AE63 /* SampleImage.swift */,
+				BB46517C2BCD80900059AE63 /* Store.swift */,
 				BB4651722BCD807B0059AE63 /* Assets.xcassets */,
 				BB4651742BCD807B0059AE63 /* Preview Content */,
 			);
@@ -65,6 +80,17 @@
 				BB4651752BCD807B0059AE63 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BBCE03D12BCD81FF006E4103 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB4651802BCD80900059AE63 /* ListView.swift */,
+				BB46517D2BCD80900059AE63 /* TabCarouselView.swift */,
+				BB46517E2BCD80900059AE63 /* ScrollViewCarouselView.swift */,
+				BB4651812BCD80900059AE63 /* ScrollViewCarouselView2.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +163,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB4651712BCD807A0059AE63 /* ContentView.swift in Sources */,
+				BB4651842BCD80900059AE63 /* TabCarouselView.swift in Sources */,
+				BB4651852BCD80900059AE63 /* ScrollViewCarouselView.swift in Sources */,
+				BB4651832BCD80900059AE63 /* Store.swift in Sources */,
+				BB4651872BCD80900059AE63 /* ListView.swift in Sources */,
+				BB4651862BCD80900059AE63 /* SampleImage.swift in Sources */,
+				BB4651892BCD80900059AE63 /* StartTab.swift in Sources */,
+				BB4651882BCD80900059AE63 /* ScrollViewCarouselView2.swift in Sources */,
 				BB46516F2BCD807A0059AE63 /* ImageCarouselApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
