@@ -16,7 +16,7 @@
 		BB4651862BCD80900059AE63 /* SampleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46517F2BCD80900059AE63 /* SampleImage.swift */; };
 		BB4651872BCD80900059AE63 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4651802BCD80900059AE63 /* ListView.swift */; };
 		BB4651882BCD80900059AE63 /* ScrollViewCarouselView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4651812BCD80900059AE63 /* ScrollViewCarouselView2.swift */; };
-		BB4651892BCD80900059AE63 /* StartTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4651822BCD80900059AE63 /* StartTab.swift */; };
+		BBF6AC152BCDFBAB0003F336 /* StartTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF6AC142BCDFBAB0003F336 /* StartTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 		BB46517F2BCD80900059AE63 /* SampleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleImage.swift; sourceTree = "<group>"; };
 		BB4651802BCD80900059AE63 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		BB4651812BCD80900059AE63 /* ScrollViewCarouselView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewCarouselView2.swift; sourceTree = "<group>"; };
-		BB4651822BCD80900059AE63 /* StartTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartTab.swift; path = ../../../ImageCarousel/ImageCarousel/StartTab.swift; sourceTree = "<group>"; };
+		BBF6AC142BCDFBAB0003F336 /* StartTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				BB46516E2BCD807A0059AE63 /* ImageCarouselApp.swift */,
-				BB4651822BCD80900059AE63 /* StartTab.swift */,
+				BBF6AC142BCDFBAB0003F336 /* StartTab.swift */,
 				BBCE03D12BCD81FF006E4103 /* Views */,
 				BB46517F2BCD80900059AE63 /* SampleImage.swift */,
 				BB46517C2BCD80900059AE63 /* Store.swift */,
@@ -168,8 +168,8 @@
 				BB4651832BCD80900059AE63 /* Store.swift in Sources */,
 				BB4651872BCD80900059AE63 /* ListView.swift in Sources */,
 				BB4651862BCD80900059AE63 /* SampleImage.swift in Sources */,
-				BB4651892BCD80900059AE63 /* StartTab.swift in Sources */,
 				BB4651882BCD80900059AE63 /* ScrollViewCarouselView2.swift in Sources */,
+				BBF6AC152BCDFBAB0003F336 /* StartTab.swift in Sources */,
 				BB46516F2BCD807A0059AE63 /* ImageCarouselApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
