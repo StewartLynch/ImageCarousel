@@ -15,7 +15,34 @@ struct ScrollViewCarouselView: View {
     @Environment(Store.self) private var store
     var body: some View {
         NavigationStack {
-            Text("ScrollView Carousel")
+            ScrollView(.horizontal, showsIndicators: false) {
+                LazyHStack(spacing: 0) {
+                    ForEach(store.sampleImages) { sampleImage in
+                        VStack {
+                            AsyncImage(url: sampleImage.imageUrl) { image in
+                                image
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(maxWidth: .infinity)
+                                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                                    .shadow(radius: 10)
+                                    .padding()
+                            } placeholder: {
+                                ProgressView()
+                            }
+                            Text(sampleImage.caption)
+                                .font(.title)
+                        }
+                        .containerRelativeFrame(.horizontal)
+                        .scrollTransition(.animated, axis: .horizontal) { content, phase in
+                            content
+                                .opacity(phase.isIdentity ? 1.0 : 0.6)
+                                .scaleEffect(phase.isIdentity ? 1.0 : 0.6)
+                        }
+                    }
+                }
+            }
+            .scrollTargetBehavior(.paging)
                 .navigationTitle("ScrollView")
         }
     }

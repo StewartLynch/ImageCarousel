@@ -14,7 +14,27 @@ struct TabCarouselView: View {
     @Environment(Store.self) private var store
     var body: some View {
         NavigationStack {
-            Text("TabView Carousel")
+            TabView {
+                ForEach(store.sampleImages) { sampleImage in
+                    VStack {
+                        AsyncImage(url: sampleImage.imageUrl) { image in
+                            image
+                                .resizable()
+                                .scaledToFit()
+                                .frame(maxWidth: .infinity)
+                                .clipShape(RoundedRectangle(cornerRadius: 20))
+                                .shadow(radius: 10)
+                                .padding()
+                        } placeholder: {
+                            ProgressView()
+                        }
+                        Text(sampleImage.caption)
+                            .font(.title)
+                    }
+                }
+            }
+            .tabViewStyle(.page)
+            .indexViewStyle(.page(backgroundDisplayMode: .always))
             .navigationTitle("Tab Views")
         }
     }
