@@ -15,20 +15,20 @@ import SwiftUI
 struct StartTab: View {
     var body: some View {
         TabView {
-            Text("List View")
+            ListView()
                 .tabItem {
                         Label("List", systemImage: "list.triangle")
                     
                 }
-            Text("Tab Carousel")
+            TabCarouselView()
                 .tabItem {
                     Label("Tabs", systemImage: "1.circle.fill")
                 }
-            Text("ScrollView Carousel")
+            ScrollViewCarouselView()
                 .tabItem {
                     Label("ScrollView", systemImage: "2.circle.fill")
                 }
-            Text("ScrollView Carousel 2")
+            ScrollViewCarouselView2()
                 .tabItem {
                     Label("ScrollView+  ", systemImage: "3.circle.fill")
                 }
