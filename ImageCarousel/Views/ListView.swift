@@ -17,10 +17,9 @@ struct ListView: View {
     var body: some View {
         NavigationStack{
             Text("List View")
-            .listStyle(.plain)
-            .navigationTitle("List View")
+                .listStyle(.plain)
+                .navigationTitle("List View")
         }
-        
     }
 }
 

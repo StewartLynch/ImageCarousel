@@ -17,7 +17,7 @@ struct ScrollViewCarouselView2: View {
     var body: some View {
         NavigationStack {
             Text("ScrollView Carousel +")
-            .navigationTitle("ScrollView +")
+                .navigationTitle("ScrollView +")
         }
     }
 }

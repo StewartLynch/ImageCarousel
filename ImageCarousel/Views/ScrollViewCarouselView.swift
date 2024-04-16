@@ -14,10 +14,10 @@ import SwiftUI
 struct ScrollViewCarouselView: View {
     @Environment(Store.self) private var store
     var body: some View {
-            NavigationStack {
-                Text("ScrollView Carousel")
+        NavigationStack {
+            Text("ScrollView Carousel")
                 .navigationTitle("ScrollView")
-            }
+        }
     }
 }
 
